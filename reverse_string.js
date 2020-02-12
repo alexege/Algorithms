@@ -7,11 +7,16 @@ var str = 'creature';
 
 function reverseString(str){
     var temp = '';
-    for(var i = str.length - 1; i > 0; i--){
+    for(var i = str.length - 1; i >= 0; i--){
         temp += str[i];
     }
     str = temp;
     return str;
 }
 
-console.log(reverseString(str));
+function reverseQuick(str){
+    return str.split("").reverse().join("");
+}
+
+// console.log(reverseString(str));
+console.log(reverseQuick(str));
